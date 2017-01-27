@@ -1,6 +1,8 @@
+; L or RWinキー単タイプでIME ON, OFFを切り替える(Macのかな, 英数仕様)
+; REF: https://github.com/karakaram/alt-ime-ahk
+
 #Include alt-ime-ahk\IME.ahk
 
-; REF: https://github.com/karakaram/alt-ime-ahk
 *~a::
 *~b::
 *~c::

@@ -1,3 +1,5 @@
+; REF: https://autohotkey.com/board/topic/59612-simple-debug-console-output/
+
 DebugMessage(str) {
     global h_stdout
     DebugConsoleInitialize()  ; start console window if not yet started
