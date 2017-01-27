@@ -13,21 +13,21 @@ sendCtrl(key, original) {
         Send, %original%
     }
 }
-<^a::sendCtrl("{Home}", "<^a")
-+<^a::sendCtrl("+{Home}", "+<^a")
-<^e::sendCtrl("{End}", "<^e")
-+<^e::sendCtrl("+{End}", "+<^e")
-<^f::sendCtrl("{Right}", "<^f")
-+<^f::sendCtrl("+{Right}", "+<^f")
-<^b::sendCtrl("{Left}", "<^b")
-+<^b::sendCtrl("+{Left}", "+<^b")
-<^p::sendCtrl("{Up}", "<^p")
-+<^p::sendCtrl("+{Up}", "+<^p")
-<^n::sendCtrl("{Down}", "<^n")
-+<^n::sendCtrl("+{Down}", "+<^n")
-<^o::sendCtrl("{End}{Enter}", "<^o")
-<^h::sendCtrl("{Backspace}", "<^h")
-<^d::sendCtrl("{Delete}", "<^d")
+<^a::sendCtrl("{Home}", "^a")
++<^a::sendCtrl("+{Home}", "+^a")
+<^e::sendCtrl("{End}", "^e")
++<^e::sendCtrl("+{End}", "+^e")
+<^f::sendCtrl("{Right}", "^f")
++<^f::sendCtrl("+{Right}", "+^f")
+<^b::sendCtrl("{Left}", "^b")
++<^b::sendCtrl("+{Left}", "+^b")
+<^p::sendCtrl("{Up}", "^p")
++<^p::sendCtrl("+{Up}", "+^p")
+<^n::sendCtrl("{Down}", "^n")
++<^n::sendCtrl("+{Down}", "+^n")
+<^o::sendCtrl("{End}{Enter}", "^o")
+<^h::sendCtrl("{Backspace}", "^h")
+<^d::sendCtrl("{Delete}", "^d")
 
 ; Mac like command
 ; REF: https://autohotkey.com/board/topic/60675-osx-style-command-keys-in-windows/
