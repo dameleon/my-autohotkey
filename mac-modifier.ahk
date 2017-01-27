@@ -1,23 +1,33 @@
 #InstallKeybdHook
 #UseHook
 
+#Include env.ahk
+
 ; Mac like ctrl
 ; REF: https://github.com/karakaram/auto-hot-key
-<^a::Send {Home}
-+<^a::Send +{Home}
-<^e::Send {End}
-+<^e::Send +{End}
-<^f::Send {Right}
-+<^f::Send +{Right}
-<^b::Send {Left}
-+<^b::Send +{Left}
-<^p::Send {Up}
-+<^p::Send +{Up}
-<^n::Send {Down}
-+<^n::Send +{Down}
-<^o::Send {End}{Enter}
-<^h::Send {Backspace}
-<^d::Send {Delete}
+sendCtrl(key, original) {
+    if (isFixCtrlKeyTarget()) {
+        Send, %key%
+    }
+    else {
+        Send, %original%
+    }
+}
+<^a::sendCtrl("{Home}", "<^a")
++<^a::sendCtrl("+{Home}", "+<^a")
+<^e::sendCtrl("{End}", "<^e")
++<^e::sendCtrl("+{End}", "+<^e")
+<^f::sendCtrl("{Right}", "<^f")
++<^f::sendCtrl("+{Right}", "+<^f")
+<^b::sendCtrl("{Left}", "<^b")
++<^b::sendCtrl("+{Left}", "+<^b")
+<^p::sendCtrl("{Up}", "<^p")
++<^p::sendCtrl("+{Up}", "+<^p")
+<^n::sendCtrl("{Down}", "<^n")
++<^n::sendCtrl("+{Down}", "+<^n")
+<^o::sendCtrl("{End}{Enter}", "<^o")
+<^h::sendCtrl("{Backspace}", "<^h")
+<^d::sendCtrl("{Delete}", "<^d")
 
 ; Mac like command
 ; REF: https://autohotkey.com/board/topic/60675-osx-style-command-keys-in-windows/
